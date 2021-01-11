@@ -1,6 +1,14 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #9356DC;
   font-family: "Shrikhand", cursive;
+}
+
+.header {
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
