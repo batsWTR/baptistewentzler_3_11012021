@@ -1,0 +1,25 @@
+
+
+
+.header{
+    font-family: $font-title;
+    font-size: $font-big;
+    text-align: center;
+    margin: 1.2rem;
+    padding: 1px;
+    i{
+        display: none;
+    }
+    &--arrow{
+
+        i{
+            display: inline;
+            float: left;
+            font-size: $font-med;
+            padding-top: 1.5rem;
+        }
+        a{
+            color: black;
+        }
+    }
+}

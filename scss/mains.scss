@@ -3,17 +3,16 @@
 
 @import "utilities/_utilities";
 @import "base/_base";
+@import "layouts/_header";
+@import "pages/_accueil";
 
 html{
     font-size: 62.5%;
 }
 
 body{
-    background-color: $color-primary;
-    font-family: $font-title;
-    
+    box-sizing: border-box;
+    background-color: white;
+    font-family: $font-text;
 }
 
-.header{
-    font-size: $big-size;
-}

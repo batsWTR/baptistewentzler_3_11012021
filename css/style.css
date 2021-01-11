@@ -1,14 +1,31 @@
+.header {
+  font-family: "Shrikhand", cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 1.2rem;
+  padding: 1px;
+}
+.header i {
+  display: none;
+}
+.header--arrow i {
+  display: inline;
+  float: left;
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
+}
+.header--arrow a {
+  color: black;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  background-color: #9356DC;
-  font-family: "Shrikhand", cursive;
-}
-
-.header {
-  font-size: 3rem;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
