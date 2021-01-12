@@ -32,7 +32,7 @@
 .footer{
     color: $color-footer;
     background-color: $color-bg-footer;
-    padding: 1.5rem;
+    padding-left: $padding-left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
