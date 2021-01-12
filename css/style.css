@@ -29,7 +29,7 @@
   flex-direction: column;
   align-items: flex-start;
 }
-.footer h2 {
+.footer h3 {
   margin: 0;
   font-family: "Shrikhand", cursive;
 }
@@ -46,6 +46,22 @@
 }
 .footer i {
   margin-right: 0.5rem;
+}
+
+.recherche {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.recherche input {
+  width: 100%;
+  border: none;
+  color: black;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #e2e2e2;
 }
 
 html {
