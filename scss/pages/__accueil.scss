@@ -15,6 +15,20 @@
         text-align: center;
         padding: 1rem 0;
         background-color: darken($color-bg,8%);
+        font-size: $font-size3;
+    }
+    h2{
+        font-size: $font-size1;
+        text-align: center;
+        margin: 2rem;
+    }
+    p{
+        font-size: $font-size3;
+        text-align: center;
+        margin: 0;
+    }
+    button{
+        font-size: $font-size4;
     }
   
 }
@@ -22,6 +36,6 @@
 .fonctionnement{
     padding-left: $padding-left;
     padding-right: $padding-left;
-    font-size: $font-med;
+    font-size: $font-size3;
 
 }

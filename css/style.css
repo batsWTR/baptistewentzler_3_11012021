@@ -1,3 +1,11 @@
+.but {
+  padding: 1.5rem 2rem;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+  margin: 2rem 0;
+}
+
 .header {
   text-align: center;
   margin: 1.2rem;
@@ -5,7 +13,7 @@
 }
 .header h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin: 0;
 }
 .header i {
@@ -14,7 +22,7 @@
 .header--arrow i {
   display: inline;
   float: left;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding-top: 1.5rem;
 }
 .header--arrow a {
@@ -62,6 +70,20 @@
   text-align: center;
   padding: 1rem 0;
   background-color: #e2e2e2;
+  font-size: 1.8rem;
+}
+.recherche h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 2rem;
+}
+.recherche p {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0;
+}
+.recherche button {
+  font-size: 1.5rem;
 }
 
 .fonctionnement {
