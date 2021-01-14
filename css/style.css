@@ -2,7 +2,7 @@
   padding: 1.5rem 2rem;
   background-color: #9356DC;
   color: white;
-  border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+  border-radius: 2.5rem;
   margin: 2rem 0;
 }
 
@@ -90,6 +90,38 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.card-fn {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 2rem 1rem;
+  margin: 1.5rem 1rem;
+  background-color: #f6f6f6;
+  box-shadow: -1rem 1rem 0.5rem #b6b6b6;
+  border-radius: 2.5rem;
+  font-size: 1.5rem;
+}
+.card-fn__order {
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
+  position: relative;
+  right: 1.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  text-align: center;
+}
+.card-fn__logo {
+  color: #838383;
+}
+.card-fn__text {
+  margin-left: 1.5rem;
+}
+.card-fn--bg {
+  background-color: #df00a1;
 }
 
 html {
