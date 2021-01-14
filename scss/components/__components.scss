@@ -5,8 +5,10 @@
 
 .but{
     padding: 1.5rem 2rem;
-    background-color: $color-primary;
+    background: linear-gradient(170deg,$color-secondary,$color-primary);
     color: white;
     border-radius: 2.5rem;
     margin: 2rem 0;
+    cursor: pointer;
+
 }

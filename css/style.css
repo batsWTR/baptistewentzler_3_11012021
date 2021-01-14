@@ -1,9 +1,10 @@
 .but {
   padding: 1.5rem 2rem;
-  background-color: #9356DC;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
   color: white;
   border-radius: 2.5rem;
   margin: 2rem 0;
+  cursor: pointer;
 }
 
 .header {
