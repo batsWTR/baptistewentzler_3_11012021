@@ -13,6 +13,10 @@ $padding-left: 1.5rem;
 $font-size1: 2.4rem;
 $font-size2: 2rem;
 $font-size3: 1.6rem;
-$font-size4: 1.6rem
+$font-size4: 1.6rem;
+
+@mixin shadow{
+    box-shadow: -1rem 1rem 0.3rem darken($color-bg, 5%);
+}
 
 
