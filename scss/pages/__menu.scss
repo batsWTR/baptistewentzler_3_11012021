@@ -41,23 +41,36 @@
     @include shadow;
     background-color: white;
     border-radius: 1rem;
+    padding-left: $padding-left;
+    margin-bottom: $padding-left;
+    font-size: $font-size3;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    //overflow: hidden;
-
+    &__left{
+        h4{
+            margin: 0;
+            padding-top: $padding-left;
+        }
+        p{
+            margin: 0;
+            padding-bottom: $padding-left;
+            font-size: $font-size4;
+        }
+    }
+    &__right{
+        width: 6rem;
+    }
     &__price{
         
         display: inline-block;
         height: 100%;
-        //width: 100%;
-
     }
     &__tick{
         display: inline-block;
-        translate: 3rem;
+        //translate: 3rem;
         height: 100%;
         width: 2.5rem;
         background-color: $color-third;

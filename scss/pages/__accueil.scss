@@ -91,7 +91,7 @@
 .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     @include tablette{
         flex-direction: row;
         flex-wrap: wrap;
