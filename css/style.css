@@ -133,8 +133,8 @@
   border-radius: 50%;
   position: relative;
   right: 1.8rem;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
   text-align: center;
 }
 .card-fn__logo {
@@ -156,13 +156,33 @@
   font-size: 1.6rem;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .card-resto {
   background-color: white;
+  max-width: 40rem;
   display: block;
   text-decoration: none;
   color: black;
   border-radius: 1rem;
+  margin: 1.5rem 0;
   box-shadow: -1rem 0.8rem 0.8rem #e2e2e2;
+}
+@media screen and (min-width: 800px) {
+  .card-resto {
+    margin: 1.5rem 1.5rem;
+  }
 }
 .card-resto__img {
   display: block;

@@ -19,6 +19,12 @@ $font-size4: 1.6rem;
     box-shadow: -1rem 0.8rem 0.8rem darken($color-bg, 5%);
 }
 
+@mixin tablette{
+    @media screen and (min-width:800px){
+        @content
+    }
+}
+
 .bg-whitw{
     background-color: white;
 }
