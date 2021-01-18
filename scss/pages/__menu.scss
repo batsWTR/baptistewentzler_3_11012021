@@ -1,0 +1,70 @@
+
+
+
+
+.page{
+    background-color: $color-bg;
+    overflow: hidden;
+    
+    img{
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.menu{
+    background-color: $color-bg;
+    border-radius: 2.5rem 2.5rem 0 0;
+    position: relative;
+    bottom: 2rem;
+    padding: 1px $padding-left;
+    &__title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2.5rem;
+        margin-right: 2.5rem;
+        font-family: $font-title;
+        font-size: $font-size2;
+    
+    }
+
+    &__commander{
+        margin-top: 4rem;
+        text-align: center;
+    }
+}
+
+.menu-card{
+    @include shadow;
+    background-color: white;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    //overflow: hidden;
+
+    &__price{
+        
+        display: inline-block;
+        height: 100%;
+        //width: 100%;
+
+    }
+    &__tick{
+        display: inline-block;
+        translate: 3rem;
+        height: 100%;
+        width: 2.5rem;
+        background-color: $color-third;
+    }
+}
+
+.footer-menu{
+    position:relative;
+    top: 2rem;
+}

@@ -5,7 +5,7 @@ $color-secondary: #FF79DA;
 $color-secondary-lt: #eee5f9;
 $color-third: #99E2D0;
 $color-bg-footer: #3f3f3f;
-$color-bg: #f6f6f6;
+$color-bg: darken(#f6f6f6,3%);
 $color-footer: white;
 
 $padding-left: 1.5rem;
@@ -16,7 +16,19 @@ $font-size3: 1.6rem;
 $font-size4: 1.6rem;
 
 @mixin shadow{
-    box-shadow: -1rem 1rem 0.3rem darken($color-bg, 5%);
+    box-shadow: -1rem 0.8rem 0.8rem darken($color-bg, 5%);
 }
 
+.bg-whitw{
+    background-color: white;
+}
 
+.bg-menu{
+    background-color: $color-bg;
+}
+
+.underline{
+    border-bottom: 0.3rem solid $color-third;
+    display:inline-block;
+    width: 2.5rem;
+}
