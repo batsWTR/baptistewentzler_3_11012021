@@ -259,6 +259,7 @@
   padding-left: 1.5rem;
   margin-bottom: 1.5rem;
   font-size: 1.6rem;
+  font-weight: 900;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -273,15 +274,16 @@
   padding-top: 1.5rem;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis ellipsis;
+  text-overflow: ellipsis;
 }
 .menu-card__left p {
   margin: 0;
   padding-bottom: 1.5rem;
   font-size: 1.6rem;
+  font-weight: 100;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis ellipsis;
+  text-overflow: ellipsis;
 }
 .menu-card__right {
   cursor: pointer;
@@ -289,7 +291,8 @@
   font-size: 2rem;
   display: flex;
   flex-direction: row;
-  translate: 4rem;
+  position: relative;
+  left: 4rem;
   transition: transform 1s;
 }
 .menu-card__right:hover {
@@ -299,6 +302,7 @@
   height: 100%;
   width: 4rem;
   padding-top: 50%;
+  font-weight: 900;
 }
 .menu-card__tick {
   color: white;
