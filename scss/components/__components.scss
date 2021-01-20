@@ -6,12 +6,20 @@
 .but{
     padding: 1.5rem 2rem;
     background: linear-gradient(170deg,$color-secondary,$color-primary);
+    box-shadow: -1rem 0.8rem 0.8rem darken($color-bg, 15%);
     color: white;
     border-radius: 2.5rem;
     margin: 2rem 0;
     cursor: pointer;
     font-size: $font-size4;
     text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.4s ease-in;
+
+    &:hover{
+        opacity: 0.8;
+        
+    }
 
 }
 //------------ ajout fenetre 'nouveau'
