@@ -1,4 +1,56 @@
 
+//------------------------ loading spinner
+.loading{
+
+    
+    background-color: $color-bg;
+    opacity: 0.5;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    animation: loader 3s backwards;
+
+    div{
+        //width: 10rem;
+        //height: 10rem;
+        //border: 2rem solid $color-primary;
+        //border-radius: 50%;
+    }
+    i{
+        color: $color-primary;
+        font-size: 8rem;
+        padding: 3rem;
+        animation: drink 3s;
+    
+    }
+}
+
+@keyframes loader{
+    0%{
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes drink{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 
 //-------- bouton rechercher et commander
@@ -59,6 +111,7 @@
     font-size: $font-size2;
 }
 
+//------------------------- animation heart
 .heart{
     
     cursor: pointer;
