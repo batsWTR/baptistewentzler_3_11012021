@@ -142,13 +142,8 @@
             margin: 0;
             padding-bottom: 1.5rem;
         }
-        i{
-            font-size: $font-size1;
-            color: darken($color-bg, 40%);
-            cursor: pointer;
-            &:active{
-                background-color: $color-primary;
-            }
-        }
+        
+        
     }
+    
 }

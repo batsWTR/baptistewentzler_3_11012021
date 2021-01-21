@@ -58,3 +58,34 @@
     width: 2.5rem;
     font-size: $font-size2;
 }
+
+.heart{
+    
+    cursor: pointer;
+    position: relative;
+    &:hover > .heart--under{
+        cursor: pointer;
+        transform: scale(1);
+    }
+    &--over{
+        font-size: $font-size2;
+        color: darken($color-bg, 40%);
+        position: absolute;
+        bottom: -.5rem;
+        right: 2rem;
+        font-weight: 500;
+
+    }
+    &--under{
+        font-size: $font-size2;
+        position: absolute;
+        bottom: -.5rem;
+        right: 2rem;
+        color: $color-primary;
+        font-weight: 900;
+        transform: scale(0);
+        transform-origin: bottom;
+        transition: transform 0.8s;
+    
+    }
+}
