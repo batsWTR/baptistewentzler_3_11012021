@@ -50,7 +50,7 @@
   font-size: 1.4rem;
   text-decoration: none;
   opacity: 1;
-  transition: opacity 0.4s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 .but:hover {
   opacity: 0.8;
@@ -111,6 +111,14 @@
   transition: transform 0.8s;
 }
 
+@keyframes menu-animation {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 .header {
   background-color: white;
   text-align: center;
@@ -394,6 +402,24 @@
   text-align: center;
   padding-top: 25%;
   background-color: #99E2D0;
+}
+
+.anim-entrees {
+  transform-origin: top;
+  transform: scaleY(0);
+  animation: menu-animation 3s forwards 1s;
+}
+
+.anim-plats {
+  transform-origin: top;
+  transform: scaleY(0);
+  animation: menu-animation 3s forwards 2s;
+}
+
+.anim-desserts {
+  transform-origin: top;
+  transform: scaleY(0);
+  animation: menu-animation 3s forwards 3s;
 }
 
 .footer-menu {

@@ -66,7 +66,7 @@
     font-size: $font-size4;
     text-decoration: none;
     opacity: 1;
-    transition: opacity 0.4s ease-in;
+    transition: opacity 0.3s ease-in;
 
     
     &:hover{
@@ -143,3 +143,8 @@
     }
 }
 
+//-------------------- animation menus
+@keyframes menu-animation{
+    0%{transform: scaleY(0);}
+    100%{transform: scaleY(1);}
+}

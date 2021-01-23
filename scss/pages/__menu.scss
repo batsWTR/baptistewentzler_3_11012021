@@ -105,6 +105,21 @@
     }
 }
 
+.anim-entrees{
+    transform-origin: top;
+    transform: scaleY(0);
+    animation: menu-animation 3s forwards 1s;
+}
+.anim-plats{
+    transform-origin: top;
+    transform: scaleY(0);
+    animation: menu-animation 3s forwards 2s;
+}
+.anim-desserts{
+    transform-origin: top;
+    transform: scaleY(0);
+    animation: menu-animation 3s forwards 3s;
+}
 
 .footer-menu{
     position:relative;
