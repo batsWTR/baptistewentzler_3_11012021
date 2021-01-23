@@ -69,12 +69,14 @@
     }
     &__logo{
         color: darken($color-bg, 45%);
+        margin: 0 1px;
         &--color {
             color: $color-primary;
         }
     }
     &__text{
         margin-left: 2.5rem;
+        padding-right: 1rem;
         }
     &--bg{
         background-color: $color-secondary-lt;

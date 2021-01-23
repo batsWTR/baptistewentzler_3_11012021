@@ -225,12 +225,14 @@
 }
 .card-fn__logo {
   color: #7c7c7c;
+  margin: 0 1px;
 }
 .card-fn__logo--color  {
   color: #9356DC;
 }
 .card-fn__text {
   margin-left: 2.5rem;
+  padding-right: 1rem;
 }
 .card-fn--bg {
   background-color: #eee5f9;
