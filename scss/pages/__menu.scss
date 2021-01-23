@@ -45,7 +45,6 @@
     font-size: $font-size3;
     font-weight: 900;
     overflow: hidden;
-   
 
     display: flex;
     flex-direction: row;
@@ -55,7 +54,8 @@
     
     &__left{
         overflow: hidden;
-
+        cursor: pointer;
+        flex-grow: 1;
         h4{
             margin: 0;
             padding-top: $padding-left;
@@ -72,9 +72,12 @@
             white-space: nowrap;
             text-overflow: ellipsis;                     
         }
+        &:hover + .menu-card__right{
+            transform: translateX(-4rem);          
+
+        }
     }
     &__right{
-        cursor: pointer;
         width: 8rem;
         font-size: $font-size2;
          
@@ -85,9 +88,6 @@
         //translate: 4rem;
         transition: transform 1s;
 
-        &:hover{
-            transform: translateX(-4rem);          
-        }
     }
     &__price{
         height: 100%;
