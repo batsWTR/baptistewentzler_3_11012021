@@ -2,6 +2,7 @@
 .loading {
   background-color: #eeeeee;
   opacity: 0.8;
+  z-index: 2;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -58,6 +59,7 @@
 .but::after {
   content: "";
   position: absolute;
+  z-index: -1;
   left: 0;
   top: 0;
   border-radius: 2.5rem;
@@ -154,7 +156,7 @@
   display: inline;
   float: left;
   font-size: 2rem;
-  padding-top: 1rem;
+  padding: 1rem;
 }
 .header--arrow a {
   color: black;
@@ -404,6 +406,7 @@
   font-size: 2rem;
   display: flex;
   flex-direction: row;
+  margin-left: 0.5rem;
   margin-right: -5rem;
   transition: transform 1s;
 }

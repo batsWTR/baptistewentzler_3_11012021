@@ -4,6 +4,7 @@
     
     background-color: $color-bg;
     opacity: 0.8;
+    z-index: 2;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -64,6 +65,7 @@
     &::after{
         content: '';
         position: absolute;
+        z-index: -1;
         left: 0;
         top: 0;
         border-radius: 2.5rem;
