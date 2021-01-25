@@ -11,7 +11,9 @@
   height: 100vh;
   width: 100vw;
   max-width: 1200px;
+  transform: scale(0);
   transform-origin: 50% 50%;
+  animation: loader 3s backwards;
 }
 .loading i {
   color: #9356DC;
@@ -40,6 +42,7 @@
   }
 }
 .but {
+  position: relative;
   padding: 1.5rem 2rem;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   box-shadow: -1rem 0.8rem 0.8rem #c8c8c8;
@@ -52,8 +55,23 @@
   opacity: 1;
   transition: opacity 0.3s ease-in;
 }
+.but::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 2.5rem;
+  width: 100%;
+  height: 100%;
+  box-shadow: -1rem 1.2rem 1.2rem #bbbbbb;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
 .but:hover {
   opacity: 0.8;
+}
+.but:hover::after {
+  opacity: 1;
 }
 
 .nouveau::after {
