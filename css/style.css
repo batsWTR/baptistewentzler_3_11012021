@@ -360,13 +360,12 @@
   overflow: hidden;
   cursor: pointer;
   flex-grow: 1;
+  transition: margin-right 1s;
 }
 .menu-card__left h4 {
   margin: 0;
   padding-top: 1.5rem;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .menu-card__left p {
   margin: 0;
@@ -378,27 +377,28 @@
   text-overflow: ellipsis;
 }
 .menu-card__left:hover + .menu-card__right {
-  transform: translateX(-4rem);
+  transform: translateX(-5rem);
+}
+.menu-card__left:hover {
+  margin-right: 5rem;
 }
 .menu-card__right {
-  width: 8rem;
   font-size: 2rem;
   display: flex;
   flex-direction: row;
-  position: relative;
-  left: 4rem;
+  margin-right: -5rem;
   transition: transform 1s;
 }
 .menu-card__price {
   height: 100%;
-  width: 4rem;
+  width: 5rem;
   padding-top: 50%;
   font-weight: 900;
 }
 .menu-card__tick {
   color: white;
   height: 100%;
-  width: 4rem;
+  width: 5rem;
   text-align: center;
   padding-top: 25%;
   background-color: #99E2D0;

@@ -56,12 +56,12 @@
         overflow: hidden;
         cursor: pointer;
         flex-grow: 1;
+        transition: margin-right 1s;
+
         h4{
             margin: 0;
             padding-top: $padding-left;
             overflow: hidden;  
-            white-space: nowrap;
-            text-overflow: ellipsis; 
         }
         p{
             margin: 0;
@@ -73,32 +73,31 @@
             text-overflow: ellipsis;                     
         }
         &:hover + .menu-card__right{
-            transform: translateX(-4rem);          
+            transform: translateX(-5rem);          
 
+        }
+        &:hover{
+            margin-right: 5rem;
         }
     }
     &__right{
-        width: 8rem;
         font-size: $font-size2;
-         
         display: flex;
         flex-direction: row;
-        position: relative;
-        left: 4rem;
-        //translate: 4rem;
+        margin-right: -5rem;
         transition: transform 1s;
 
     }
     &__price{
         height: 100%;
-        width: 4rem;
+        width: 5rem;
         padding-top: 50%;
         font-weight: 900;
     }
     &__tick{
         color: white;
         height: 100%;
-        width: 4rem;
+        width: 5rem;
         text-align: center;
         padding-top: 25%;
         background-color: $color-third;
