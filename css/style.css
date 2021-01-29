@@ -138,6 +138,14 @@
     transform: scaleY(1);
   }
 }
+@keyframes anim-tick {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .just-black {
   color: black;
 }
@@ -378,11 +386,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  cursor: pointer;
+}
+.menu-card:hover > .menu-card__right {
+  transform: translateX(-5rem);
+}
+.menu-card:hover > .menu-card__right i {
+  animation: anim-tick 1s;
+}
+.menu-card:hover > .menu-card__left {
+  margin-right: 5rem;
 }
 .menu-card__left {
   overflow: hidden;
-  cursor: pointer;
   flex-grow: 1;
   transition: margin-right 1s;
 }
@@ -402,14 +418,9 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu-card__left:hover + .menu-card__right {
-  transform: translateX(-5rem);
-}
-.menu-card__left:hover {
-  margin-right: 5rem;
-}
 .menu-card__right {
   font-size: 2rem;
+  flex-shrink: 0;
   display: flex;
   flex-direction: row;
   margin-left: 0.5rem;
@@ -419,15 +430,16 @@
 .menu-card__price {
   height: 100%;
   width: 5rem;
-  padding-top: 28%;
+  padding-top: 27%;
   font-weight: 900;
 }
 .menu-card__tick {
   color: white;
   height: 100%;
   width: 5rem;
-  text-align: center;
-  padding-top: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #99E2D0;
 }
 

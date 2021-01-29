@@ -157,7 +157,15 @@
     0%{transform: scaleY(0);}
     100%{transform: scaleY(1);}
 }
-
+//--------------- animation tick
+@keyframes anim-tick{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 // ---------------------- for heart menu, color in black
 .just-black{
     color: black;
